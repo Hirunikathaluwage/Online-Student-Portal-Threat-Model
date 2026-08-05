@@ -21,24 +21,26 @@
         "cells": [
           {
             "position": {
-              "x": 360,
-              "y": 50
+              "x": 330,
+              "y": 49.999999999999545
             },
             "size": {
-              "width": 930,
-              "height": 490
+              "width": 1250,
+              "height": 560
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "23c6625c-f056-4568-ba97-9d56be415cf0",
             "zIndex": -1,
+            "id": "23c6625c-f056-4568-ba97-9d56be415cf0",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "8603180d-d2fc-44f5-91d9-95b9c61b2d82"
+              ],
               "containedElements": [
                 "3147bd28-f1c6-4b62-8498-5e3ee0ee793f",
                 "79ba49f5-f8f7-4d30-b069-5f87809a0bce",
@@ -47,37 +49,8 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": -1,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "020488c3-5271-44d7-834b-9d718ca68049",
-            "source": {
-              "x": 500,
-              "y": 70
-            },
-            "target": {
-              "x": 500,
-              "y": 540
-            },
-            "vertices": []
-          },
-          {
             "position": {
-              "x": 80,
+              "x": -10,
               "y": 100
             },
             "size": {
@@ -96,6 +69,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 0,
             "ports": {
               "groups": {
                 "top": {
@@ -179,7 +153,6 @@
               ]
             },
             "id": "9a0aa873-ea46-4454-8c50-80139740ca33",
-            "zIndex": 0,
             "data": {
               "type": "tm.Actor",
               "name": "Student ",
@@ -194,8 +167,8 @@
           },
           {
             "position": {
-              "x": 80,
-              "y": 230
+              "x": -10,
+              "y": 215.0000000000001
             },
             "size": {
               "width": 112.5,
@@ -213,6 +186,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -296,7 +270,6 @@
               ]
             },
             "id": "495a0b54-58dc-44d8-8e62-979dcf463bae",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Lecturer",
@@ -311,8 +284,8 @@
           },
           {
             "position": {
-              "x": 80,
-              "y": 350
+              "x": -10,
+              "y": 345.0000000000001
             },
             "size": {
               "width": 112.5,
@@ -330,6 +303,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -413,7 +387,6 @@
               ]
             },
             "id": "af52b796-4e8b-4098-a6cd-d8b70f897fa4",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
@@ -429,11 +402,11 @@
           {
             "position": {
               "x": 620,
-              "y": 275
+              "y": 275.0000000000001
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 130,
+              "height": 80
             },
             "attrs": {
               "text": {
@@ -548,12 +521,12 @@
           },
           {
             "position": {
-              "x": 820,
-              "y": 275
+              "x": 860,
+              "y": 270.0000000000001
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 120,
+              "height": 90
             },
             "attrs": {
               "body": {
@@ -665,8 +638,8 @@
           },
           {
             "position": {
-              "x": 1020,
-              "y": 270
+              "x": 1090,
+              "y": 275.0000000000001
             },
             "size": {
               "width": 180,
@@ -687,6 +660,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -770,7 +744,6 @@
               ]
             },
             "id": "6deec6a3-900b-4c24-93bd-40f8d788938e",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Student portal database",
@@ -786,6 +759,89 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 6,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "020488c3-5271-44d7-834b-9d718ca68049",
+            "source": {
+              "x": 520,
+              "y": 60
+            },
+            "target": {
+              "x": 520,
+              "y": 610
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 11,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "23c6625c-f056-4568-ba97-9d56be415cf0"
+              ]
+            },
+            "labels": [
+              "Login request"
+            ],
+            "id": "8603180d-d2fc-44f5-91d9-95b9c61b2d82",
+            "source": {
+              "x": 133,
+              "y": 124
+            },
+            "target": {
+              "cell": "3147bd28-f1c6-4b62-8498-5e3ee0ee793f",
+              "port": "38e04796-415e-4e23-9fa5-1801ed2c2d9f"
+            },
+            "vertices": [
+              {
+                "x": 230,
+                "y": 124
+              }
+            ]
           }
         ],
         "description": "Data flow for the Online Student Portal"
