@@ -46,7 +46,6 @@
                 "66dc573f-9134-4d21-b5e2-8f2cad020971",
                 "661bc116-3434-4d16-a5da-d33be8e61957",
                 "c36a1759-f48f-4083-9e98-0593d54b2673",
-                "70bfbe76-9bc2-4551-81c5-b6e61151fc59",
                 "8603180d-d2fc-44f5-91d9-95b9c61b2d82"
               ],
               "containedElements": [
@@ -1232,7 +1231,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Examination-results response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1243,21 +1242,19 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "23c6625c-f056-4568-ba97-9d56be415cf0"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Examination-results response"
             ],
-            "id": "70bfbe76-9bc2-4551-81c5-b6e61151fc59",
+            "id": "ba22c20f-dc49-4190-811d-92194b982233",
             "source": {
-              "cell": "3147bd28-f1c6-4b62-8498-5e3ee0ee793f",
-              "port": "38e04796-415e-4e23-9fa5-1801ed2c2d9f"
+              "x": 690,
+              "y": 260
             },
             "target": {
               "cell": "9a0aa873-ea46-4454-8c50-80139740ca33",
-              "port": "8a76760d-b342-4597-a72b-a79f1a7c2ffe"
+              "port": "86ae4c66-d36f-4e28-ab80-8517c844a98e"
             }
           },
           {
