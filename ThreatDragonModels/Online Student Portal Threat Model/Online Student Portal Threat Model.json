@@ -46,6 +46,7 @@
                 "66dc573f-9134-4d21-b5e2-8f2cad020971",
                 "661bc116-3434-4d16-a5da-d33be8e61957",
                 "c36a1759-f48f-4083-9e98-0593d54b2673",
+                "70bfbe76-9bc2-4551-81c5-b6e61151fc59",
                 "8603180d-d2fc-44f5-91d9-95b9c61b2d82"
               ],
               "containedElements": [
@@ -53,13 +54,6 @@
                 "79ba49f5-f8f7-4d30-b069-5f87809a0bce",
                 "6deec6a3-900b-4c24-93bd-40f8d788938e"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -852,7 +846,13 @@
             "target": {
               "cell": "3147bd28-f1c6-4b62-8498-5e3ee0ee793f",
               "port": "38e04796-415e-4e23-9fa5-1801ed2c2d9f"
-            }
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 275
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1180,7 +1180,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Database response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1194,16 +1194,70 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Database response"
             ],
-            "id": "0da7431d-1683-4d92-8dce-57f00c7c5984",
+            "id": "bcabc288-1332-460e-a14d-d787dc60ff16",
             "source": {
-              "x": 1370,
-              "y": 180
+              "cell": "6deec6a3-900b-4c24-93bd-40f8d788938e",
+              "port": "38b6c52c-8533-4ab8-ba48-bb4a3050bacd"
             },
             "target": {
-              "x": 1420,
-              "y": 330
+              "cell": "3147bd28-f1c6-4b62-8498-5e3ee0ee793f",
+              "port": "38e04796-415e-4e23-9fa5-1801ed2c2d9f"
+            },
+            "vertices": [
+              {
+                "x": 1050,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "23c6625c-f056-4568-ba97-9d56be415cf0"
+              ]
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "70bfbe76-9bc2-4551-81c5-b6e61151fc59",
+            "source": {
+              "cell": "3147bd28-f1c6-4b62-8498-5e3ee0ee793f",
+              "port": "38e04796-415e-4e23-9fa5-1801ed2c2d9f"
+            },
+            "target": {
+              "cell": "9a0aa873-ea46-4454-8c50-80139740ca33",
+              "port": "8a76760d-b342-4597-a72b-a79f1a7c2ffe"
             }
           },
           {
@@ -1257,6 +1311,10 @@
               {
                 "x": 230,
                 "y": 124
+              },
+              {
+                "x": 460,
+                "y": 170
               },
               {
                 "x": 540,
