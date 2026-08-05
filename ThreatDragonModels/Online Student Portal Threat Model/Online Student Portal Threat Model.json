@@ -22,7 +22,7 @@
           {
             "position": {
               "x": 330,
-              "y": 49.999999999999545
+              "y": 40.000000000000114
             },
             "size": {
               "width": 1250,
@@ -43,6 +43,7 @@
                 "b841c708-75ab-4a09-8873-a94b14f88232",
                 "3e1bf6fd-4a08-40c2-aa9b-dc4eb2446d30",
                 "cc8f332b-16f3-4a7a-b074-da92d78b084d",
+                "66dc573f-9134-4d21-b5e2-8f2cad020971",
                 "8603180d-d2fc-44f5-91d9-95b9c61b2d82"
               ],
               "containedElements": [
@@ -53,6 +54,8 @@
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
                 "boundary",
                 "button-remove"
               ],
@@ -532,14 +535,17 @@
           },
           {
             "position": {
-              "x": 860,
-              "y": 270.0000000000001
+              "x": 950,
+              "y": 275.0000000000001
             },
             "size": {
               "width": 120,
               "height": 90
             },
             "attrs": {
+              "text": {
+                "text": "Authentication Service"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -634,7 +640,7 @@
             "id": "79ba49f5-f8f7-4d30-b069-5f87809a0bce",
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "Authentication Service",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -649,7 +655,7 @@
           },
           {
             "position": {
-              "x": 1090,
+              "x": 1270,
               "y": 275.0000000000001
             },
             "size": {
@@ -991,6 +997,55 @@
               "cell": "3147bd28-f1c6-4b62-8498-5e3ee0ee793f",
               "port": "9053ff24-8be2-47a6-9c79-00b1de5bb54a"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "23c6625c-f056-4568-ba97-9d56be415cf0"
+              ]
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "66dc573f-9134-4d21-b5e2-8f2cad020971",
+            "source": {
+              "x": 720,
+              "y": 320
+            },
+            "target": {
+              "cell": "79ba49f5-f8f7-4d30-b069-5f87809a0bce",
+              "port": "4c3309ac-8d17-421d-8318-e0ce43bd9049"
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
